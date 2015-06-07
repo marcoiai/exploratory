@@ -1,6 +1,6 @@
 
 
-f <- read.csv("household_power_consumption.txt", sep = ";", na.strings = "?")
+f2 <- read.csv("household_power_consumption.txt", sep = ";", na.strings = "?")
 
 f2 <- na.omit(f[as.Date(f$Date, "%d/%m/%Y") %in% as.Date(c('2007-02-01', '2007-02-02')),])
 
